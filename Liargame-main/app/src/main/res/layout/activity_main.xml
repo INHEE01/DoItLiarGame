@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_most_deep"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main_subject_layout"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/subject_background"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="주제"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="27dp"
+            android:background="@drawable/yellow_1"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/activity_main_subject_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="물건"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingHorizontal="50dp"/>
+
+        <TextView
+            android:id="@+id/activity_main_subject_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="변경"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:background="@drawable/change_button"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_main_game_frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/activity_main_select_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_game_button"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_game_frame_layout"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제시어 선택"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reset_button_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_refresh_24"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
