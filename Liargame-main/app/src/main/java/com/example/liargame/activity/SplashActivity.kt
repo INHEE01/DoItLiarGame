@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
 
     // 다른 액티비티에서도 사용할 수 있도록 하는 object
     companion object {
-        var WRITER : String = "박세영"
+        var WRITER : String =""
     }
 
     /**
@@ -53,7 +53,7 @@ class SplashActivity : AppCompatActivity() {
      */
     override fun onStart() {
         super.onStart()
-        findViewById<TextView>(R.id.activity_splash_writer).text = "Made By $WRITER"
+        findViewById<TextView>(R.id.activity_splash_writer).text = ""
     }
 
     /**

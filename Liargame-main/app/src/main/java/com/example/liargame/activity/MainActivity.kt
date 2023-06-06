@@ -148,7 +148,7 @@ class MainActivity : AppCompatActivity(), OnGameEventListener, OnPopupDismissLis
         findViewById<TextView>(R.id.activity_main_subject_btn_layout).setOnClickListener {
             val bundle = Bundle()
             bundle.putString("BRANCH", "주제")
-            val popup = PopupFragment(applicationContext, bundle, mWord, arrayListOf("물건", "음식", "직업"), this)
+            val popup = PopupFragment(applicationContext, bundle, mWord, arrayListOf("물건", "음식", "직업","영화","가수","동물"), this)
             popup.show(supportFragmentManager, "주제")
         }
 
@@ -248,6 +248,9 @@ class MainActivity : AppCompatActivity(), OnGameEventListener, OnPopupDismissLis
                 SubjectEnum.JOB -> "직업"
                 SubjectEnum.FOOD -> "음식"
                 SubjectEnum.OBJECT -> "물건"
+                SubjectEnum.MOVIE -> "영화"
+                SubjectEnum.SINGER -> "가수"
+                SubjectEnum.ANIMAL -> "동물"
                 else -> {
                     DEFINES.SUBJECT = SubjectEnum.OBJECT
                     "물건"
@@ -273,6 +276,9 @@ class MainActivity : AppCompatActivity(), OnGameEventListener, OnPopupDismissLis
             SubjectEnum.OBJECT -> mList = DEFINES.WORD.OBJECT_LIST
             SubjectEnum.FOOD -> mList = DEFINES.WORD.FOOD_LIST
             SubjectEnum.JOB -> mList = DEFINES.WORD.JOB_LIST
+            SubjectEnum.MOVIE -> mList = DEFINES.WORD.MOVIE_LIST
+            SubjectEnum.SINGER -> mList = DEFINES.WORD.SINGER_LIST
+            SubjectEnum.ANIMAL -> mList = DEFINES.WORD.ANIMAL_LIST
         }
         var index = Random().nextInt(mList!!.size)
         mWord = mList!!.get(index)
