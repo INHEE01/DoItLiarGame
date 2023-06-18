@@ -13,10 +13,12 @@
     <color name="warm_blue">#51668c</color>
     <color name="green">#5fb44c</color>
     <color name="hot_blue">#2f4c90</color>
-    <color name="blue">#0000f5</color>
+    <color name="blue">#0000f5</color>c4
     <color name="not_so_cold_blue">#bccdee</color>
     <color name="red">#ea3323</color>
     <color name="popup_button_blue">#86acf7</color>
     <color name="popup_background_blue">#173e77</color>
     <color name="popup_title_blue">#103059</color>
+    <color name="wide_purple">#c4beee</color>
+    <color name="background_black">#111112</color>
 </resources>

@@ -1,5 +1,5 @@
 package com.example.liargame.DEFINES
 
 enum class SubjectEnum {
-    OBJECT, FOOD, JOB
+    OBJECT, FOOD, JOB, MOVIE, SINGER, ANIMAL
 }

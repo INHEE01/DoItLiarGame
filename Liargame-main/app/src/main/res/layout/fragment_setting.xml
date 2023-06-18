@@ -52,9 +52,9 @@
                     android:id="@+id/fragment_setting_player_count_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="4명"
                     android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:text="3명"/>
+                    android:textSize="20dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -175,15 +175,15 @@
             android:id="@+id/fragment_setting_play_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="게임 시작"
-            android:paddingVertical="10dp"
-            android:paddingHorizontal="20dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
             android:background="@drawable/play_game_button"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="게임 시작"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </FrameLayout>
