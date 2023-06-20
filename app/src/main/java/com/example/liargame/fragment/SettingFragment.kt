@@ -81,11 +81,8 @@ class SettingFragment(onGameStartListener: OnGameEventListener) : Fragment() {
                 Log.d("[SettingFragment]", "이전 모드 버튼 클릭")
                 Handler(Looper.getMainLooper()).post {
                     view?.findViewById<TextView>(R.id.fragment_setting_mode_text)?.text =
-                        if (DEFINES.GAME_MODE== GameModeEnum.NORMAL) (
-                            GameModeEnum.SPY.toString()
-                            ) else (
+
                             GameModeEnum.NORMAL.toString()
-                            )
                 }
             }
 
@@ -93,11 +90,9 @@ class SettingFragment(onGameStartListener: OnGameEventListener) : Fragment() {
             view?.findViewById<LinearLayout>(R.id.fragment_setting_mode_next)?.setOnClickListener {
                 Log.d("[SettingFragment]", "다음 모드 버튼 클릭")
                 Handler(Looper.getMainLooper()).post {
-                    if (DEFINES.GAME_MODE == GameModeEnum.NORMAL) {
-                        DEFINES.GAME_MODE = GameModeEnum.SPY
-                    } else {
+                    if (DEFINES.GAME_MODE == GameModeEnum.NORMAL)
+
                         DEFINES.GAME_MODE = GameModeEnum.NORMAL
-                    }
                     view?.findViewById<TextView>(R.id.fragment_setting_mode_text)?.text = DEFINES.GAME_MODE.toString()
                 }
             }
